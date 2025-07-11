@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# terminal-resume
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um currículo interativo em formato de terminal, inspirado em experiências de terminal Unix/Linux, feito para web.
 
-Currently, two official plugins are available:
+## Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Acesse online: [https://seulink.com/terminal-resume](https://seulink.com/terminal-resume)
 
-## Expanding the ESLint configuration
+## Funcionalidades
+- Interface de terminal simulada
+- Comandos customizados (about, blog, social, projects, stack, etc)
+- Temas de cores (Dracula, Gruvbox, Green)
+- Histórico de comandos e navegação com setas
+- Efeito "typewriter" para saída dos comandos
+- Totalmente responsivo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Comandos disponíveis
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+about          Who is PrimoDev?
+blog           See all my posts under DevTo
+social         Display social networks
+projects       View coding projects
+stack          View my current stack
+videos         View YouTube videos
+podcasts       Watch podcast episodes where I was the guest
+resume         Get my online resume link
+history        View command history
+help           You obviously already know what this does
+email          Do you not prefer use one of my social networks?
+clear          Clear terminal
+banner         Display the header
+reload         Reloads the page cleaning history
+sudo           Force administrator mode (it's your responsibility)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como rodar localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/PedroPaino/terminal-resume.git
+cd terminal-resume
+npm install
+npm run dev
 ```
+
+Acesse em `http://localhost:5173` ou conforme instrução do terminal.
+
+## Tecnologias
+- HTML, CSS, JavaScript
+- Vite
+- (Opcional) React para versões futuras
+
+## Autor
+Pedro Paino - [LinkedIn](https://linkedin.com/in/pedro-paino)
+
+---
+Sinta-se à vontade para contribuir ou adaptar para seu próprio currículo!
