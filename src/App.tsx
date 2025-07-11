@@ -52,6 +52,7 @@ function getCaretCoordinates(input: HTMLInputElement) {
 
 function App({ onClose }: { onClose: () => void }) {
     console.log("App component rendered");
+    console.log("App component rendered");
     const inputRef = useRef<HTMLInputElement>(null);
     const dragHandleRef = useRef<HTMLDivElement>(null);
 
