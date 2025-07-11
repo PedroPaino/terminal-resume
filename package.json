@@ -1,6 +1,6 @@
 {
   "name": "react-terminal",
-  "homepage": "https://pedropaino.github.io/terminal-resume/",
+  "homepage": "https://pedropaino.github.io/terminal-resume",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
